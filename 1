@@ -1,0 +1,44 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+df = pd.read_csv('E:\\dsbddddddaaaaa practical\\practice\\1w\\student_data.csv')
+
+
+# Data Preprocessing
+
+df.isnull().sum()
+df.isnull()
+df.describe()
+df.info()
+df.shape
+
+
+//isnull().sum() checks for NaN values.
+describe() gives mean, min, max, std, etc., of numeric features.
+info() shows types, non-null counts, memory usage.
+shape tells the number of rows and columns.//
+
+
+df.dtypes
+
+categorical_columns = ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+for col in categorical_columns:
+    df[col] = df[col].astype('category')
+
+Some columns like gender and lunch type are categorical.
+We convert them to the category type to reduce memory and prepare for encoding.
+
+
+6 
+df_encoded = pd.get_dummies(df, drop_first=True)
+
+One-hot encoding transforms string labels into binary columns.
+drop_first=True avoids the dummy variable trap
+
+
+
+
+
