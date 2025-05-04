@@ -1,0 +1,303 @@
+1) What is Pandas library in Python?
+A: Pandas is a powerful open-source data analysis and manipulation library in Python. It provides data structures like DataFrame and Series for handling and analyzing structured data. It is widely used for data wrangling, cleaning, and processing tasks.
+
+2) List some key features of Pandas.
+A:
+
+DataFrame: A 2D size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
+
+Series: A one-dimensional labeled array.
+
+Handling missing data: It provides tools for handling missing data (e.g., NaN values).
+
+Data alignment: Automatic and explicit data alignment.
+
+Data manipulation: Supports merging, reshaping, and joining of datasets.
+
+GroupBy: Efficient group-based operations.
+
+3) What is Numpy Library in Python?
+A: Numpy is a Python library for numerical computing. It provides support for arrays, matrices, and high-level mathematical functions to operate on these arrays. It is highly efficient for numerical operations.
+
+4) What is matplotlib library?
+A: Matplotlib is a popular Python library used for creating static, interactive, and animated visualizations. It supports various types of plots, such as line plots, bar plots, histograms, and scatter plots.
+
+5) What is the difference between Seaborn and Matplotlib libraries?
+A:
+
+Matplotlib: It is a basic plotting library that allows you to create static visualizations with control over every aspect of the plot. It’s flexible but requires more lines of code for customization.
+
+Seaborn: Built on top of Matplotlib, Seaborn simplifies the process of creating attractive and informative statistical graphics. It also integrates well with pandas data structures and offers better styling and color schemes.
+
+6) Is Sklearn and Sci-kit Learn the same library? What is its use in data science?
+A: Yes, Sklearn and Sci-kit Learn refer to the same library. It's a Python library for machine learning that provides simple and efficient tools for data mining and data analysis. It includes algorithms for classification, regression, clustering, and dimensionality reduction.
+
+7) What are functions in Pandas and Numpy libraries?
+A:
+
+Pandas:
+
+read_csv(), dropna(), fillna(), groupby(), merge(), pivot_table(), describe(), head(), etc.
+
+Numpy:
+
+array(), mean(), median(), std(), reshape(), arange(), zeros(), ones(), random(), etc.
+
+8) What is a DataFrame in Python?
+A: A DataFrame is a 2D data structure in Pandas that stores data in rows and columns. It is similar to a table or a spreadsheet. It can hold different data types (integer, float, string, etc.) and allows you to manipulate and analyze the data.
+
+9) How to find duplicates in Python? (Python command)
+A: You can use the duplicated() function in Pandas to find duplicate rows:
+
+python
+Copy
+Edit
+df.duplicated()
+This returns a boolean series that shows whether each row is a duplicate.
+
+10) What is the use of the describe command?
+A: The describe() function in Pandas provides summary statistics of numerical columns in the DataFrame, such as count, mean, standard deviation, min, max, and quartiles.
+
+11) Which Naive Bayes classification algorithm is used in Python?
+A: In Python, the most commonly used Naive Bayes algorithms are:
+
+Gaussian Naive Bayes (GaussianNB)
+
+Multinomial Naive Bayes (MultinomialNB)
+
+Bernoulli Naive Bayes (BernoulliNB)
+
+These are available in the scikit-learn library.
+
+12) What is the significance of the Confusion Matrix?
+A: The confusion matrix is a performance measurement tool for classification problems. It compares the predicted class with the actual class to compute metrics like accuracy, precision, recall, and F1-score.
+
+13) What is TP, TN, FP, FN in the confusion matrix?
+A:
+
+TP (True Positive): Correctly predicted positive class.
+
+TN (True Negative): Correctly predicted negative class.
+
+FP (False Positive): Incorrectly predicted positive class (Type I error).
+
+FN (False Negative): Incorrectly predicted negative class (Type II error).
+
+14) What is Recall?
+A: Recall (also known as Sensitivity or True Positive Rate) is the ratio of correctly predicted positive observations to the total actual positives:
+
+text
+Copy
+Edit
+Recall = TP / (TP + FN)
+15) What is Precision?
+A: Precision is the ratio of correctly predicted positive observations to the total predicted positives:
+
+text
+Copy
+Edit
+Precision = TP / (TP + FP)
+16) What is F1 Score?
+A: F1 Score is the harmonic mean of Precision and Recall. It balances the two metrics and is particularly useful when the class distribution is imbalanced:
+
+text
+Copy
+Edit
+F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+17) What is the need for data visualization in data science?
+A: Data visualization helps in understanding complex data by converting it into graphical representations. It aids in identifying patterns, trends, and insights quickly, which helps in making informed decisions.
+
+18) What is an Outlier?
+A: An outlier is a data point that lies far away from the other observations in the dataset. It can significantly affect statistical analyses, and techniques such as trimming or transformation may be used to handle them.
+
+19) When to use a Histogram and Pie Chart?
+A:
+
+Histogram: Used to show the frequency distribution of a continuous variable.
+
+Pie Chart: Used to represent proportions or percentages of a whole, typically for categorical data.
+
+20) What are the challenges in Big Data visualization?
+A: Some challenges include:
+
+Handling large volumes of data without compromising performance.
+
+Data integration from various sources.
+
+Visualizing complex relationships in multidimensional data.
+
+Real-time data processing and visualization.
+
+21) What is a Joint Plot, Dist Plot?
+A:
+
+Joint Plot: It shows the relationship between two variables along with their distributions.
+
+Dist Plot: A distribution plot visualizes the distribution of a single variable, often using histograms and kernel density estimation.
+
+22) What are tools used for Data Visualization?
+A: Some commonly used data visualization tools are:
+
+Matplotlib
+
+Seaborn
+
+Plotly
+
+Tableau
+
+Power BI
+
+D3.js
+
+23) What is Data Wrangling?
+A: Data wrangling (also known as data munging) is the process of cleaning and transforming raw data into a format suitable for analysis, such as handling missing values, fixing inconsistencies, and restructuring data.
+
+24) What is Data Transformation?
+A: Data transformation refers to the process of converting data from its raw form into a more suitable format for analysis, often involving normalization, scaling, encoding, and aggregating.
+
+25) What is the use of the StandardScaler function in Python?
+A: The StandardScaler function in Python (from scikit-learn) is used to standardize the features of the dataset. It scales the features to have a mean of 0 and a standard deviation of 1.
+
+26) What is Hadoop?
+A: Hadoop is an open-source framework used for distributed storage and processing of large datasets. It is designed to scale from a single server to thousands of machines.
+
+27) What is HDFS and MapReduce?
+A:
+
+HDFS (Hadoop Distributed File System): It stores large datasets across many computers and provides fault tolerance.
+
+MapReduce: A programming model for processing large datasets in parallel across a Hadoop cluster.
+
+28) What are the components of the Hadoop Ecosystem?
+A: Key components include:
+
+HDFS
+
+MapReduce
+
+Hive
+
+Pig
+
+HBase
+
+Sqoop
+
+Oozie
+
+29) What is Scala?
+A: Scala is a high-level programming language that combines functional programming with object-oriented programming. It is used in the Apache Spark ecosystem for big data processing.
+
+30) What are features of Scala?
+A: Features of Scala include:
+
+Statically typed language
+
+Functional programming support
+
+Immutability and Concurrency
+
+JVM compatibility
+
+31) How is Scala different from Java?
+A: Scala is more concise and expressive than Java. It combines functional programming and object-oriented programming, and supports type inference while Java is purely object-oriented.
+
+32) List applications of Scala.
+A: Scala is widely used in big data frameworks like Apache Spark, Akka, Play Framework, and for general-purpose programming in data science and backend development.
+
+33) What is Data Science?
+A: Data Science is a multidisciplinary field that uses scientific methods, processes, algorithms, and systems to extract insights from structured and unstructured data.
+
+34) What is Big Data?
+A: Big Data refers to large volumes of structured or unstructured data that cannot be processed using traditional data processing methods due to their size, complexity, and speed of generation.
+
+35) What are the characteristics of Big Data?
+A: The 5 V’s of Big Data:
+
+Volume: The large size of data.
+
+Velocity: The speed at which data is generated and processed.
+
+Variety: The different types of data (structured, unstructured).
+
+Veracity: The uncertainty of data.
+
+Value: The usefulness of the data.
+
+36) List phases in the Data Science life cycle.
+A: The phases include:
+
+Data Collection
+
+Data Cleaning
+
+Exploratory Data Analysis (EDA)
+
+Feature Engineering
+
+Model Building
+
+Model Evaluation
+
+Deployment
+
+37) What is Central Tendency?
+A: Central Tendency refers to the measure that identifies the center of a distribution of data. Common measures include mean, median, and mode.
+
+38) What is Dispersion?
+A: Dispersion measures the spread or variability in a data set. Common measures include range, variance, and standard deviation.
+
+39) What is Mean, Mode, Mid Range, and Median?
+For the dataset [10, 22, 13, 10, 21, 43, 77, 21, 10]:
+
+Mean: The average value = (10 + 22 + 13 + 10 + 21 + 43 + 77 + 21 + 10) / 9 = 23.33
+
+Mode: The value that appears most frequently = 10
+
+Mid-range: The average of the max and min values = (77 + 10) / 2 = 43.5
+
+Median: The middle value when data is sorted = 21
+
+40) What is Variance?
+A: Variance is a measure of how much the data points deviate from the mean. It is calculated as the average of the squared differences from the mean.
+
+41) What is Standard Deviation?
+A: Standard deviation measures the average distance of data points from the mean. It is the square root of the variance.
+
+42) What is the posterior probability in Naive Bayes Theorem?
+A: The posterior probability is the probability of a class given the features, which is calculated using Bayes' Theorem:
+
+text
+Copy
+Edit
+P(Class|Features) = (P(Features|Class) * P(Class)) / P(Features)
+43) What is likelihood probability in Naive Bayes Theorem?
+A: The likelihood is the probability of observing the given features (data) under each class assumption, i.e., P(Features|Class).
+
+44) How can we deal with Missing Values?
+A: We can deal with missing values by:
+
+Removing rows or columns with missing values (dropna()).
+
+Filling missing values with a statistical measure like mean, median, or mode (fillna()).
+
+Using interpolation or other imputation techniques.
+
+45) What is NLTK?
+A: NLTK (Natural Language Toolkit) is a Python library for working with human language data (text). It provides tools for text processing, such as tokenization, stemming, and part-of-speech tagging.
+
+46) What is Tokenization in NLP?
+A: Tokenization is the process of splitting text into smaller units, such as words or sentences, which can be processed by NLP algorithms.
+
+47) What is Stemming?
+A: Stemming is the process of reducing words to their root form (e.g., "running" becomes "run").
+
+48) What is Lemmatization?
+A: Lemmatization is the process of reducing words to their base or dictionary form (e.g., "better" becomes "good"). Unlike stemming, lemmatization considers the meaning of the word.
+
+49) What is Corpus in NLP?
+A: A corpus is a large collection of text used for training NLP models or performing text-based analysis.
+
+50) What is Spark Framework?
+A: Apache Spark is an open-source, distributed computing system that provides an interface for programming clusters with built-in modules for streaming, machine learning, and SQL. It is widely used for big data processing and analytics.
